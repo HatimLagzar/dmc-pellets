@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
             ->upsert([
                 'user_id'   => 1,
                 'type'      => 'contacts',
-                'html_data' => '<p>You can reach them at:</p>
+                'html_data' => '<p>You can reach us via the following contact details:</p>
 <p>Phone: 03841-303060</p>
 <p>Email: contact@dmc-pellets.com</p>
 <p><br></p>
