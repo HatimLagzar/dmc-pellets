@@ -181,7 +181,7 @@ color:black !important;" id="section_pos_190">
                                 <div class="cb-column " style="position: relative; height: 100%;   color:black;">
                                     <div style="height: .1px;"></div>
                                     <div class="cb-column-block" style="  color:white;"><h3>Contact</h3>
-                                        {!! str_replace('You can reach them at', 'You can reach us via the following contact details', $contacts_html_data) !!}
+                                        {!! $contacts_html_data !!}
                                     </div>
                                 </div>
                             </div>

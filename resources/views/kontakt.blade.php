@@ -16,7 +16,7 @@
                                         <div class="cb-column-block" style="  "><h3><font
                                                     style="vertical-align: inherit;"><font
                                                         style="vertical-align: inherit;">Contact</font></font></h3>
-                                            {!! str_replace('You can reach them at', 'You can reach us via the following contact details', $contacts_html_data) !!}
+                                            {!! $contacts_html_data !!}
                                         </div>
                                         <div class="cb-column-block" style="  ">
                                             <div class="cb-img-block" style="width:100%;"><img alt="{{ $dealer_name_html_data }} logo"

@@ -183,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="cb-column-block" style="  padding-left:10px;"><h3>Contact</h3>
-                                {!! str_replace('You can reach them at:', 'You can reach us via the following contact details:', $contacts_html_data) !!}
+                                {!! $contacts_html_data !!}
                             </div>
                         </div>
                     </div>
