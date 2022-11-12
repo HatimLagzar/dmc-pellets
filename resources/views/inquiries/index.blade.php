@@ -14,8 +14,8 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Address</th>
-            <th scope="col">Zip</th>
             <th scope="col">City</th>
+            <th scope="col">Zip</th>
             <th scope="col">Phone</th>
             <th scope="col">Type</th>
             <th scope="col">Quantity</th>
@@ -30,8 +30,8 @@
                 <td>{{ $item->firstname }}</td>
                 <td>{{ $item->lastname }}</td>
                 <td>{{ $item->address }}</td>
-                <td>{{ $item->zip }}</td>
                 <td>{{ $item->city }}</td>
+                <td>{{ $item->zip }}</td>
                 <td>{{ $item->phone }}</td>
                 <td>{{ $item->type }}</td>
                 <td>{{ $item->quantity }}</td>
