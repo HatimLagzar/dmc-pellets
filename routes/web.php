@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppImagesController;
 use App\Http\Controllers\ContentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubmissionController;
@@ -86,6 +87,7 @@ Auth::routes(['register' => false]);
   
 Route::resource('submissions', SubmissionController::class)->middleware('auth');
 Route::resource('inquiries', InquiryController::class)->middleware('auth');
+Route::resource('app-images', AppImagesController::class)->middleware('auth');
 Route::resource('content', ContentController::class)->middleware('auth');
 
 Route::post('/submissions',[App\Http\Controllers\SubmissionController::class, 'store']);
