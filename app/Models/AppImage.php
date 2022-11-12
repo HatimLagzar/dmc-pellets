@@ -14,6 +14,8 @@ class AppImage extends Model
 
     protected $table = self::TABLE;
 
+    public $timestamps = false;
+
     public function getFileName(): string
     {
         return $this->getAttribute(self::FILE_NAME_COLUMN);
