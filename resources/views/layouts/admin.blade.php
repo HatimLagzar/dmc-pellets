@@ -24,6 +24,7 @@
       #sidebarMenu {
           min-height: 1000px;
           min-height: 100vh;
+          width: auto;
       }
   </style>
 </head>
