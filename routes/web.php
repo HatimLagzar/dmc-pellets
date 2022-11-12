@@ -82,7 +82,7 @@ Route::get('/danke', function () {
 
 Auth::routes(['register' => false]);
 
-Route::get('/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+//Route::get('/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
   
 Route::resource('submissions', SubmissionController::class)->middleware('auth');
 Route::resource('inquiries', InquiryController::class)->middleware('auth');
