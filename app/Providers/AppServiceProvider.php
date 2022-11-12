@@ -29,9 +29,11 @@ class AppServiceProvider extends ServiceProvider
         //
         Paginator::useBootstrap();
         $data = DB::table('content')->whereIn('type', ['contacts', 'dealer_name'])->orderBy('type')->get();
-        View::share([
-            'contacts_html_data' => data_get($data[0], 'html_data'),
-            'dealer_name_html_data' => data_get($data[1], 'html_data')
-        ]);
+        if (isset($data[0]) && $data[1]) {
+            View::share([
+                'contacts_html_data'    => data_get($data[0], 'html_data'),
+                'dealer_name_html_data' => data_get($data[1], 'html_data')
+            ]);
+        }
     }
 }
